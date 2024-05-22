@@ -1,0 +1,14 @@
+# Mode used to reset:
+#   increment -> Will increase the blueprint timer by `time` each hit.
+#   overwrite -> Will set the blueprint timer to `time` on hit.
+reset-mode: "increment"
+# The value to set / increment the blueprint timer. (Depends on `reset-mode`)
+time: 5
+# Set this to true to prevent the timer from increasing past the max timer set in fkore configuration.
+prevent-max-timer-overflow: true
+
+language:
+  # Message to send the player that reset the blueprint.
+  player-hitter-message: "&eYou&7 have reset %blueprint_name%&7 timer to &e%time% seconds."
+  # Message to send to the player that owns the blueprint when it gets reset.
+  blueprint-owner-message: "&e%hitter_name%&7 has reset your %blueprint_name%&7 blueprint to &e%time% seconds."
